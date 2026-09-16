@@ -2785,7 +2785,7 @@ function renderHome() {
     const icons=['▱','⌁','✦','╱','□','◈','✧','⌁'];
     cats.innerHTML=CATEGORIES.slice(1,9).map((c,i)=> {
       const n=PRODUCTS.filter(p=>p.category===c).length;
-      return `<a class="cat-card ${n?'':'empty'}" href="${n?'catalogo.html?categoria='+encodeURIComponent(c):'#'}"><span class="cat-icon">${icons[i]}</span><b>${c}</b><small>${n?n+' produtos':'Sem produtos no documento'}</small><i>↗</i></a>`
+      return `<a class="cat-card ${n?'':'empty'}" href="${n?'catalogo.html?categoria='+encodeURIComponent(c):'#'}"><span class="cat-icon">${icons[i]}</span><b>${c}</b><small>${n?n+' produtos':'Sem produtos no momento'}</small><i>↗</i></a>`
     }
     ).join('')
   }
